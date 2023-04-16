@@ -1,0 +1,39 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+$primary: red;
+$footer: rgb(1, 104, 125);
+
+// .navbar {
+//     position: fixed;
+//     right: 0;
+//     width: 100%;
+// }
+
+// body {
+//     background-color: #3e4754;
+// }
+
+.profile-picture {
+    margin-top: 5rem;
+    max-width: 180px;
+}
+
+nav .container-fluid .navbar-brand {
+    font-family: 'Caveat';
+}
+
+h2 {
+    font-weight: 500;
+    font-family: 'Lora';
+}
+
+h3 {
+    font-family: 'Lora';
+}
+// Then add additional custom code here
