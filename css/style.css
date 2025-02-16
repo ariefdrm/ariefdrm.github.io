@@ -153,17 +153,24 @@ nav ul li a:hover {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   width: 60%;
 }
 
+.project-item {
+  width: 45%;
+  margin: 0;
+}
+
 .project-item img {
-  width: 390px;
-  height: 240px;
-  border-radius: 10px;
+  max-width: 100%;
+  height: 21em;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .project-item p {
@@ -235,16 +242,6 @@ footer > ul {
   .project-list {
     width: 80%;
   }
-
-  .project-item {
-    margin: 2rem 0.5rem;
-    width: 28em;
-  }
-
-  .project-item img {
-    height: 22em;
-    width: 28em;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -259,11 +256,21 @@ footer > ul {
   .about-me {
     height: 60vh;
   }
+
+  .project-item img {
+    width: 100%;
+    height: 50%;
+  }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
   .container-about-me {
     width: 90%;
+  }
+
+  .project-item {
+    width: 100%;
+    height: 50%;
   }
 }
 
