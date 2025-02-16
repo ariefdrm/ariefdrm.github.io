@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #222831;
+  --secondary: #31363f;
+  --font: #eeeeee;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: poppins, sans-serif, Arial, Helvetica;
+  font-size: 2rem;
+  color: var(--font);
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 5px;
+  height: 6vh;
+  border-radius: 20px;
+  background-color: var(--font);
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+}
+
+nav ul li a {
+  font-family: poppins, sans-serif, Arial, Helvetica;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #8a8a8a;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.profile-picture img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 10px solid var(--font);
+}
+
+.short-desc {
+  word-spacing: 11%;
+}
+
+.short-desc p {
+  line-height: 50%;
+  font-family: noto-serif;
+  font-size: 1.1rem;
+  color: var(--font);
+}
+
+.short-desc button {
+  font-family: poppins, sans-serif, Arial, Helvetica;
+  margin-right: 1.1rem;
+  color: var(--font);
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.btn-contact:hover {
+  background-color: #bfbbbb;
+  cursor: pointer;
+}
+
+.btn-cv {
+  background-color: #76abae;
+}
+
+.btn-cv:hover {
+  background-color: #4d7173;
+  cursor: pointer;
+}
+
+.short-desc button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-me {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48vh;
+  margin-top: 40px;
+}
+
+.container-about-me {
+  width: 45%;
+}
+
+.about-me h2 {
+  font-family: poppins, sans-serif, Arial, Helvetica;
+  color: var(--font);
+  font-size: 2rem;
+}
+
+.about-me p {
+  font-family: noto-serif;
+  color: var(--font);
+  font-size: 1.5rem;
+  text-align: left;
+}
